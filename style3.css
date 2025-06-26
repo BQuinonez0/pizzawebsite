@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&display=swap');
+*{
+	box-sizing: border-box; padding: 0; margin: 0; 
+}
+body{
+	font-family: 'Nanum Myeongjo', serif; line-height: 1.5;
+}
+nav{
+	display: flex;
+	justify-content: center;
+}
+ul{
+    list-style: none;
+    display: inline;
+}
+ul li{
+    display: inline-block;
+    padding: 40px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.contact-bg{
+	height: 70vh; background: url(contactbackground.jpg);background-position: 50% 0%; background-repeat: no-repeat; background-attachment: fixed;text-align: center; color:#ffffff; display: flex; flex-direction: column; justify-content: center; align-items: center;
+}
+.contact-bg h3{
+	font-size:1.3rem; font-weight: 200;
+}	
+.contact-bg h2{
+	font-size:2.4rem; padding: 0.4rem 0; letter-spacing: 4px;
+}	
+.line div{
+	margin: 0 0.7rem;
+}
+.text{ font-weight:300;}
+.contact-bg.text{margin:1.4rem 0;}
+.contact-body{max-width:1200px; margin:0 auto; padding:0 1rem;}
+.location-info{
+	margin: 2rem 0; text-align: center; padding:  2rem 0;
+}	
+.location-info span{ display:block;}
+.location-info div{ margin: 0.3rem 0; padding: 0.2rem;}
+.location-info span .fas{
+	font-size: 2rem; padding-bottom: 0.9rem; color: #C0392B;
+}
+.location-info .text{
+	padding-top: 0.5rem;
+}
+.control-form{
+	padding: 1rem 0; border-top: 1px solid #C0392B;
+}
+.contact-form form{
+	padding-bottom: 1rem;
+}
+.control{
+	width: 100%; border: 1px solid #C0392B; border-radius: 5px; padding: 1rem; margin:1rem 0; font-family: 'Nanum Myeongjo', serif; font-size: 1rem; outline:0;
+}
+.control:focus{
+	box-shadow: 0 0 4px -2px rgba(48,48,48,1);
+}
+.contact-form form div{
+	display: grid; grid-template-columns: repeat(2, 1fr); column-gap:0.6rem;
+}
+.sendButton{
+	font-family:'Nanum Myeongjo', serif; font-size: 1rem; text-transform: uppercase; color: #000000; background: #C0392B; border:none; border-radius: 5px; padding: 0.7rem 1.3rem; cursor: pointer; transition: all  0.2s ease;
+}
+.sendButton:hover{
+	opacity:0.9;
+}
+.contact-form > div ing{
+	width: 90%
+}
+.contact-form > div{
+	margin: 0 auto; text-align: center;
+}
+.footer{
+	padding: 2rem 0; background: #C0392B;
+}
+.footer h3{
+	font-size: 3rem; color: #000000; margin-bottom: 1rem; text-align:center;
+}
+.media-links{
+	display: flex; justify-content:center;
+}
+.media-links a{
+	text-decoration: none; width: 50px; height:50px; color: #FFFFFF;border: 2px solid #FFFFFF; border-radius: 50%; display: flex; justify-content: center; align-items: center; margin: 0.2rem; transition: all 0.2s ease;
+}
+.media-links a:hover{
+	color: #C0392B; border-color:#C0392B;
+}
+@media screen and (min-width: 800px){
+	.contact-bg .text{
+		width:70%; margin-left: auto; margin-right: auto;
+	}
+	.location-info{
+		display: grid; grid-template-columns: repeat(2, 1fr);
+	}
+}
+@media screen and (min-width: 800px){
+	.contact-bg .text{
+		width:50%; 
+	}
+	.contact-form{
+		display: grid; grid-template-columns: repeat(2, 1fr); align-items: center;
+	}
+}
+@media screen and (min-width: 1200px){
+	.location-info{
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
